@@ -72,9 +72,13 @@ WSGI_APPLICATION = 'brigade.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-
+        'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': '',
+        'USER': 'postgres',
+        'PASSWORD': 'postgresql',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -115,6 +119,19 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_URL = 'media/'
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_USE_TLS = True
+# EMAIL_PORT = 587     
+# EMAIL_HOST_USER = 'darshuuu11@gmail.com'
+# EMAIL_HOST_PASSWORD = 'zaze jnlq csiv gpvr'
+
+# ACCOUNT_EMAIL_REQUIRED = True
+# ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+# LOGIN_URL = 'frntnd:userlogin'
+
 
 
 # Configure whitenoise
