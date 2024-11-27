@@ -125,15 +125,15 @@
 }
 
 // Icons for within
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  display: inline-block;
-  width: $carousel-control-icon-width;
-  height: $carousel-control-icon-width;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 100% 100%;
-}
+// .carousel-control-prev-icon,
+// .carousel-control-next-icon {
+//   display: inline-block;
+//   width: $carousel-control-icon-width;
+//   height: $carousel-control-icon-width;
+//   background-repeat: no-repeat;
+//   background-position: 50%;
+//   background-size: 100% 100%;
+// }
 
 /* rtl:options: {
   "autoRename": true,
@@ -160,7 +160,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 2;
+  z-index: 0;
   display: flex;
   justify-content: center;
   padding: 0;
@@ -179,7 +179,6 @@
     margin-right: $carousel-indicator-spacer;
     margin-left: $carousel-indicator-spacer;
     text-indent: -999px;
-    cursor: pointer;
     background-color: $carousel-indicator-active-bg;
     background-clip: padding-box;
     border: 0;

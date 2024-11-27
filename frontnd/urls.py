@@ -11,5 +11,5 @@ urlpatterns = [
     path('res/', views.res, name='res'),
     path('gallary/', views.gallary, name='gallary'),
 
-
+# function(e,t){"use strict"
 ]

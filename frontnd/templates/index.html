@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     {% load static %}
-
     <head>
         <meta charset="utf-8">
         <title>PanthermanagementBregade</title>
@@ -69,7 +68,7 @@
                                 <a href="404.html" class="dropdown-item">404 Page</a> -->
                             </div>
                         </div>
-                        <a href="{% url 'frontnd:team' %}" class="nav-item nav-link">Team</a><br><br>
+                        <a href="#" class="nav-item nav-link">Team</a><br><br>
 
                         <a href="{% url 'frontnd:contact' %}" class="nav-item nav-link">Contact Us</a>
                     </div>
@@ -79,51 +78,104 @@
             </nav>
 
 
+            <img src="{% static 'Pages/img/pnthr.png' %}" alt="" style="position: absolute; opacity: 0.1; width: 99%; margin-left: 10px; margin-right: 10px; align-items: center; margin-top: -210px; margin-bottom: -200px;">
+
 
             
             <!-- Hero Header Start -->
             <div class="hero-header overflow-hidden px-5">
                 <div class="rotate-img">
-                    <img src="{% static 'Pages/img/sty-1.png' %}" class="img-fluid w-100" alt="">
+                    <img src="{% static 'Pages/img/sty-1.png' %}" class="img-fluid w-100 " alt="" style="height: 20%; z-index: 6;">
                     <div class="rotate-sty-2"></div>
                 </div>
-                <div class="row gy-5 align-items-center">
+                <div class="container py-5">
+                    <!-- <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px; margin-top: 270px; " >
+                        <h1 class="mb-1 " style="margin-top: -150px;  color: #0d4867; font-family: cursive;"> Pantherbrigadez</h1>
+                        <p class="mb-0" style="font-size: 21px; margin-top: 50px; color: #000000; ">Found by <span style="color: #10577c; font-family: sans-serif;">Mr. Ramesh Sukumaran</span> in 2023. Panther Management Bregade is a group of likeminded professionals with a shared passion for hospitality, food, and health that fuels emotionals positivity as well as physical wellbeing</p>
+                    </div> -->
+
+                
+
+                 <!-- <div class="row gy-5 align-items-center">
                     <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
                         <h3 class="display-4 text-dark mb-4 wow fadeInUp" data-wow-delay="0.3s">Habba Dates</h3>
                         <p class="fs-4 mb-4 wow fadeInUp" data-wow-delay="0.5s">Habba Dates was one of our most granded product that recommends ways to get more opens, clicks, and sales.</p>
                         <a href="{% url 'frontnd:about' %}" id="gy" class="btn btn-light rounded-pill py-3 px-5" data-wow-delay="0.7s" >About More</a>
-                     <!-- <a href="#" id="bten" class="btn rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.7s">Get Started</a> -->
                     </div>
                     <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
                         <img src="{% static 'Pages/img/haa.png' %}" class="img-fluid w-100 h-100" alt="" style="border-radius: 15px;">
                     </div>
-                </div>
+                </div>  -->
 
-                <div class="row gy-5 align-items-center" style="display: none;">
+                
+
+ <!-- Testimonial Start -->
+ <div class="container-fluid testimonial py-5"  style="margin-top: -110px; margin-bottom: -180px; z-index: 2;">
+    <div class="container py-5">
+        <div class="testimonial-carousel owl-carousel wow zoomInDown" data-wow-delay="0.2s">
+
+            <div class="testimonial-item" data-dot="<img class='img-fluid' src='' alt=''>">
+               
+                <div class="row gy-5 align-items-center">
                     <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                        <h3 class="display-4 text-dark mb-4 wow fadeInUp" data-wow-delay="0.3s">Villa maati</h3>
-                        <p class="fs-4 mb-4 wow fadeInUp" data-wow-delay="0.5s">Villa maati was one of our most granded product that recommends ways to get more opens, clicks, and sales.</p>
-                        <a href="#" id="bten" class="btn rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.7s">Get Started</a>
+                        <h3 class="display-4 text-dark mb-4 wow fadeInUp" data-wow-delay="0.3s">Villa matti</h3>
+                        <p class="fs-4 mb-4 wow fadeInUp" data-wow-delay="0.5s" style="color: black;">villa was one of our most granded product that recommends ways to get more opens, clicks, and sales.</p>
                     </div>
-                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
-                        <img src="{% static 'Pages/img/haa.png' %}" class="img-fluid w-100 h-100" alt="">
-                    </div>
-                </div>
-
-                <div class="row gy-5 align-items-center" style="display: none;">
-                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                        <h3 class="display-4 text-dark mb-4 wow fadeInUp" data-wow-delay="0.3s">Gazzibo villa</h3>
-                        <p class="fs-4 mb-4 wow fadeInUp" data-wow-delay="0.5s">Gazzibo villa was one of our most granded product that recommends ways to get more opens, clicks, and sales.</p>
-                       
-                        <a href="#" id="gy" style="text-align: center; margin-left: 30%;" class="btn btn-light rounded-pill py-3 px-5" style="text-align: center;">About More</a>
-                        <a href="#" id="bten" class="btn rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.7s">Get Started</a>
-                    </div>
-                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
-                        <img src="{% static 'Pages/img/haa.png' %}" class="img-fluid w-100 h-100" alt="">
+                    <div class="col-lg-6">
+                        <img src="{% static 'Pages/img/Villamatti/villa14.jpg' %}" class="img-fluid w-100 h-100"  alt="" style=" border-radius: 5px; border: 2px bold gray;" >
                     </div>
                 </div>
-
             </div>
+
+            <div class="testimonial-item" data-dot="<img class='img-fluid' src='' alt=''>">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                        <h3 class="display-4 text-dark mb-4 wow fadeInUp" data-wow-delay="0.3s">Habba Dates</h3>
+                        <p class="fs-4 mb-4 wow fadeInUp" data-wow-delay="0.5s" style="color: black;">Habba Dates was one of our most granded product that recommends ways to get more opens, clicks, and sales.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="{% static 'Pages/img/Habba/habb.png' %}" class="img-fluid w-100 h-100" alt="" style="border-radius: 5px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-item" data-dot="<img class='img-fluid' src='' alt=''>">
+               
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                        <h3 class="display-4 text-dark mb-4 wow fadeInUp" data-wow-delay="0.3s">Gazibo Villa</h3>
+                        <p class="fs-4 mb-4 wow fadeInUp" data-wow-delay="0.5s" style="color: black;">Gazibo Dates was one of our most granded product that recommends ways to get more opens, clicks, and sales.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="{% static 'Pages/img/Habba/gazbo.png' %}" class="img-fluid w-60 h-100" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-item" data-dot="<img class='img-fluid' src='' alt=''>">
+            
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                        <h3 class="display-4 text-dark mb-4 wow fadeInUp" data-wow-delay="0.3s">Cafe muziris</h3>
+                        <p class="fs-4 mb-4 wow fadeInUp" data-wow-delay="0.5s" style="color: black;">cafe muziris was one of our most granded product that recommends ways to get more opens, clicks, and sales.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="{% static 'Pages/img/Cafemuziris/cafe13.jpg' %}" class="img-fluid w-100 h-300" alt="">
+                    </div>
+                </div>
+            </div>
+
+           
+           
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+                 
+                 
+            </div>
+           
             <style>
                 #bten{
                     background-color: #4586aa;
@@ -161,30 +213,34 @@
                 </div>
             </div>
         </div> -->
-        <!-- <style>
-            
+
+        
+        <style>
+       
         #gy:hover{
             background-color: #065e8d;
             color: #ffffff;
         }
         #gy{
             color: #4586aa;
+        
             background-color: #e7eef0;
         }
 
         </style>
-        About End -->
-
-
         <!-- Service Start -->
+
         <div class="container-fluid service py-5">
             <div class="container py-5">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px; line-height: 1.57; margin-top: -40px;">
                     <h4 class="mb-1 " style="color: #065e8d;">Our Service</h4>
-                    <h1 class="display-6 mb-6">What We Can Do For You</h1>
+                    <h1 class="display-6 mb-6">What We Can Do For You</h1><br>
                     <p class="mb-0" style="font-size: 19px;"><span style="color: #065e8d;">PanthermanagementBregade</span> offer a matrix of interrelated services that clients and customers demand.
                         Pantherbrigadez is a professional management services for hospitality related assets such as Outlet Setup & Run the Business like work Partner for your Coffee Shop’s, Hotels, Homestays, Banquet , Vintage Villa & Resorts.
-                    </p>
+                    </p><br>
+<!-- 
+                    <a href="{% url 'frontnd:about' %}" id="gy" class="btn btn-light rounded-pill py-3 px-5" data-wow-delay="0.7s" >About More</a>
+         -->
                 </div>
                 <div class="row g-4 justify-content-center">
                     <img src="{% static 'Pages/img/Habba/hfull.png' %}" alt="" style="border-radius: 8px;">
@@ -238,13 +294,9 @@
                 </div>
             </div>
         </div>
-        <!-- Service End -->
-
-<!-- 
-        <div class="row g-4 justify-content-center">
-            <img src="{% static 'Pages/img/haa.png' %}" alt="" style="opacity: 0.6;">
+        
         </div>
-         -->
+
 
 
 
@@ -253,7 +305,7 @@
 
         <div class="container-fluid feature overflow-hidden py-5 " style="background-color: rgb(227, 227, 237);">
             <div class="container py-5">
-                <div class="row g-5 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row g-5 pt-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="col-lg-6" >
                         
                         <img id="coo" src="{% static 'Pages/img/Cafemuziris/cafe4.jpg' %}" alt="" style="width: 80%; border-radius: 50%; box-shadow: 0px 0px 25px rgb(75, 101, 109);">
@@ -275,34 +327,12 @@
         
             </div>
         </div>
-       
-        <div class="photogallary">
-            <!-- <div class="section">
-                <div class="pic">
-                    <img src="{% static 'Pages/img/Cafemuziris/cafe3.jpg' %}" alt="">
-                </div>
-                <img src="{% static 'Pages/img/Cafemuziris/cafe15.jpg' %}" alt="">
-                <img src="{% static 'Pages/img/Cafemuziris/cafe3.jpg' %}" alt="">
-                <img src="{% static 'Pages/img/Cafemuziris/cafe10.jpg' %}" alt="">
-                <img src="{% static 'Pages/img/Cafemuziris/cafe2.jpg' %}" alt="">
-                <img src="{% static 'Pages/img/Cafemuziris/cafe7.jpg' %}" alt="">
-                <img src="{% static 'Pages/img/Cafemuziris/cafe8.jpg' %}" alt="">
-                <img src="{% static 'Pages/img/Cafemuziris/cafe16.jpg' %}" alt="">
-                <img src="{% static 'Pages/img/Cafemuziris/cafe12.jpg' %}" alt="">
-                <img src="{% static 'Pages/img/Cafemuziris/cafe4.jpg' %}" alt="">
-            </div> -->
-            
-        </div>
+
+
 
 
         <style>
-            .photogallary{
-                display: grid;
-                width: 90%;  
-                margin: auto; 
-                grid-gap: 20px;
-                grid-template-columns: repeat(4, 1fr);         
-            } 
+            
             .pic{
                 position: relative;
                 height: 230px;
@@ -318,14 +348,18 @@
         </style>
 
     
+
+
             <!-- Habba dates -->
+
             <img src="{% static 'Pages/img/Habba/hbg.png' %}" alt="" style="opacity: 0.09;  position: absolute; width: 100%; height: auto; margin-top: 70px;">
 
 
         <div class="container-fluid feature overflow-hidden py-5" style="background-color: rgb(239, 239, 235);" >
             <div class="container py-5">
                 <div class="row g-5 pt-5">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    
                         <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Habba dates</h1>
                         <h4 style="font-family: 'Times New Roman', Times, serif;">A Leisure Holiday Villas at south India’s Biggest Dates
                             Farm (About 100 acres of Dates Plantation)</h4>
@@ -340,14 +374,14 @@
                         <img src="{% static 'Pages/img/Habba/hbg.png' %}" alt="" style="width: 110%; box-shadow: 0px 10px 10px rgb(193, 185, 185);">
                     </div>
                 </div>
-     
+                
                 <hr style="margin-top: 10px; margin-bottom: 50px; color: black;">
                 <div class="row g-5 pt-5">
                     <div class="col-lg-6">
                         <img id="coo" src="{% static 'Pages/img/Habba/gazbo.png' %}" alt="" style="width: 110%; margin-left: -50px;">
-                        
+                          
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
                         <h1 style="font-family: 'Times New Roman', Times, serif; margin-top: -20px;">Gazzibo villa</h1><br>
                         <p style="font-size: 19px; line-height: 41px;">Gazebo Villa—spanning 844 sq. ft., is designed to be a heaven for unwinding.
                             It features three beautifully appointed rooms,and a tunnel pool
@@ -402,15 +436,162 @@
         </style>
 
 
+
+
         <!-- Villa matti -->
-        
+
+        <style>
+             
+             .overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 150vh;
+                background: rgba(0, 0, 0, 0.7); /* Dim background */
+                z-index: 8;
+                display: none; /* Hidden by default */
+            }
+            /* .overlay {
+                width: 100%; 
+                height: 100%; 
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                background-color: #d1bece;
+                overflow-x: hidden;
+                display: none;
+                opacity: 6;
+                z-index: 18;
+            } */
+            /* .content{
+            
+                z-index: 19;
+                position: relative;
+                right: 0px;
+                top: 0px;
+                left: 20px;
+                display: none;
+                overflow-x: hidden;
+                
+            } */
+
+            .content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width */
+    height: 120vh; /* Full height */
+    background-color: #fff; /* White background */
+    overflow-y: auto; /* Scrolling only within the popup */
+    display: none; /* Hidden by default */
+    z-index: 9;
+    padding: 20px; /* Space around the content */
+    box-sizing: border-box; /* Includes padding in width/height calculation */
+}
+
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0;
+            }
+            .popup .closebtn {
+                position: absolute;
+                right: 0px;
+                margin-top: -170px;
+                width: 30px;
+                height: 30px;
+                color: #968a8a;
+                font-size: 75px;
+                
+                text-align: center;
+                cursor: pointer;
+            }
+           
+/* 
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+             } */
+            .section{
+                display: flex;
+                flex-wrap: wrap;
+                flex: 25%;
+                padding: 0 3px;
+            }  
+            .popimg{
+                width: 50%;
+                margin: 2px 1;
+                transform: scale(0.9);
+
+            }
+            
+            @media (max-width: 991px){
+                .section {
+                    flex: calc(100% / 3);
+                }
+            }
+            @media (max-width: 767px){
+                .section {
+                    flex: 50%;
+                }
+            }
+            @media (max-width: 567px){
+                .section {
+                    flex: 100%;
+                }
+            }
+            
+        </style>
+    <div class="popup">
+        <div class="overlay" style="margin-top: -220 px;"></div>
+        <div class="content" style="margin-top: -120px;">
+            <button onclick="hide()" class="closebtn" >  &times;</button>
+            <div class="container" style="margin-top: -120px;">
+                <div class="section" style="margin-top: -120px;">
+                    <img class="popimg" src="{% static 'Pages/img/Villamatti/villa13.jpg' %}" alt="">
+                    <img class="popimg" src="{% static 'Pages/img/Villamatti/villa8.jpg' %}" alt="">
+                    <img class="popimg" src="{% static 'Pages/img/Villamatti/villa11.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>  
+            
+            <script>
+                var popupoverall = document.querySelector(".overall")
+                var popupoverlay = document.querySelector(".overlay")
+                var popupcontent = document.querySelector(".content")
+
+                function show()
+                {
+                    popupcontent.style.display="block"
+                    popupoverlay.style.display="block"
+                    popupoverall.style.display="none"
+
+                     // Disable body scrolling
+                        document.body.style.overflow = "hidden";
+                        document.body.style.position = "fixed";
+                        document.body.style.width = "100%";
+                        document.body.style.height = "100%";
+                        document.documentElement.style.overflow = "hidden";
+                        document.documentElement.style.height = "100%";
+                }
+                function hide()
+                {
+                    
+                    popupcontent.style.display="none"
+                    popupoverlay.style.display="none"
+                    document.body.style.overflow = "auto";
+                    
+                }
+            </script>
 
         <div class="container-fluid feature overflow-hidden py-5" style="background-color: rgb(35, 33, 33);">
             <div class="container py-5">
                 <div class="row g-5 pt-5">
-                        
-                        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
 
+                        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
                             <h1 class=" mb-6" style="color: white; margin-bottom: 70px; font-family: 'Times New Roman', Times, serif;">Villa matti</h1>
                             <hr style="color: white; margin-bottom: 50px;">
                             <p class="mb-0" style=" font-size: 24px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  letter-spacing: .1px; color: rgb(219, 211, 211);" >Villa maati is a boutique nature stay. The retreat consists of an entertainment zone with kitchen, dining & living. A residential zone with five bedrooms - are dispersed between chikoo and mango trees - creating courts & pathways surrounding a pool. The expansive front patio facing the pool of this villa allows guests to take in the views and enjoy the outdoors year-round.</p>
@@ -425,157 +606,15 @@
                     </div>
                     
             </div>
-                <button class="picsbtn"  id="add-popup-button"> Pics </button>
-                <!-- <button class="add-button" id="add-popup-button">Pics</button> -->
-
-                
+                <button  class="picsbtn" onclick="show()">Show img</button>
             </div>
-        </div>
-
-
-
-        <!-- image Popup -->
-
-        
-      
-        <div class="popup-overlay">
-            <div class="popup-box">
-
-                <h1 id="cancel-popup" style="font-size: 31px; color: rgb(255, 253, 253);  position: absolute; margin-top: 30px; margin-left: 55%; cursor: pointer; ">
-                    X </h1>
-                <!-- <div class="img-gallary">
-                    <div class="section">
-                        <img src="{% static 'Pages/img/Cafemuziris/cafe3.jpg' %}" alt="">
-                        <img src="{% static 'Pages/img/Cafemuziris/cafe15.jpg' %}" alt="">
-                        <img src="{% static 'Pages/img/Cafemuziris/cafe3.jpg' %}" alt="">
-                        <img src="{% static 'Pages/img/Cafemuziris/cafe10.jpg' %}" alt="">
-                        <img src="{% static 'Pages/img/Cafemuziris/cafe2.jpg' %}" alt="">
-                        <img src="{% static 'Pages/img/Cafemuziris/cafe7.jpg' %}" alt="">
-                        <img src="{% static 'Pages/img/Cafemuziris/cafe8.jpg' %}" alt="">
-                        <img src="{% static 'Pages/img/Cafemuziris/cafe16.jpg' %}" alt="">
-                        <img src="{% static 'Pages/img/Cafemuziris/cafe12.jpg' %}" alt="">
-                        <img src="{% static 'Pages/img/Cafemuziris/cafe4.jpg' %}" alt="">
-                    </div>
-                    
-                </div> -->
-                
-               <button class="xbtn" id="cancel-popup" style="margin-left: 90%; margin-bottom: 200px; margin-top: -300%;">X</button>
-            </div>
-        </div>
-
-  
 
         <style>
             * {
                 box-sizing: border-box;
             }
-            /* .section{
-                flex: 25%;
-                padding: 0 3px;
-
-            }
-            .section img{
-                width: 100%;
-
-            }
-            .container{
-                display: flex;
-            } */
-
-
-
-            /* popup image */
-
-/*             
-            /* Img gallary */
-             .img-gallary{
-                display: grid;
-                width: 90%;   
-                grid-gap: 20px;
-                grid-template-columns: repeat(4, 1fr);         
-            } 
-/* 
-            .img-gallary img{
-                width: 50%;
-                height: 50px;
-                height: auto;
-                display: flex;
-                cursor: pointer;
-            }   */
-
             
-            /* Aad buuton */
-            .add-button{
-                background-color: rgb(91, 98, 98);
-                font-size: 20px;
-                width: 110px;
-                height: 50px;
-                border-radius: 17px;
-                border: none;
-                margin-left: 10em;
-                margin-top: 180px;
-                position: sticky;
-            }
-
-           
-                        
-            /* popup box alteration */
-
-            .popup-overlay{                                   
-                background-color: rgb(71, 72, 72);                                         
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                top: 0;
-                left: 0;
-                z-index: 1; 
-                display: none; 
-
-            }
-            .popup-box{
-                
-                padding: 40px ;
-                border-radius: 5px;
-                position: relative;
-                background-color: rgb(86, 100, 104);
-                left: 0%;
-                z-index: 2; 
-                display: none; 
-
-            }
-            
-            .popup-box input{
-                border: none;
-                width: 100%;
-                margin: 5px;
-                padding: 5px;
-                font-size: 18px;
-                background: transparent;
-                border-bottom: solid black;
-            
-            }
-            .popup-box textarea{
-                border: none;
-                width: 100%;
-                margin: 5px;
-                padding: 5px;
-                font-size: 18px;
-                background: transparent;
-                border-bottom: solid black;
-            
-            }
-
-            .popup-box button{
-                padding: 5px 7px 5px 7px;
-                background-color: rgb(243, 243, 243);
-                color: black;
-                font-size: 15px;
-                margin-left: 70%;
-                margin: 5px;
-                border: none;
-                border-radius: 3px;
-                border-color: solid black;
-            } 
+        
 
             /* pics button */
 
@@ -631,57 +670,7 @@
         </style>
 
 
-        <script>
-                                
-            var popupoverlay=document.querySelector(".popup-overlay")
-            var popupbox=document.querySelector(".popup-box")
-            var addpopupbutton=document.getElementById("add-popup-button")
 
-
-                        
-            addpopupbutton.addEventListener("click", function(){
-                popupoverlay.style.display="block"
-                popupbox.style.display="block"
-            })
-
-                        
-            // select cancel button          
-
-            var cancelpopupbtn=document.getElementById("cancel-popup")
-
-            cancelpopupbtn.addEventListener("click", function(event){
-                event.preventDefault()   // preventDefault() koduthal automatic
-                
-                popupoverlay.style.display="none"
-                popupbox.style.display="non"
-                
-            })
-
-
-        </script> 
-
-<!--         
-
-        <div class="container-fluid feature overflow-hidden py-5" style="background-color: rgb(214, 192, 196);">
-            <div class="container py-5">
-                <div class="row g-5 pt-5">
-                    <div class="col-lg-6" style="background-image: url('Pages/img/Cafemuziris/cafe7.jpg' );">
-                        <h2>Villa matti</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi, aperiam omnis inventore quis quos ipsam repellendus saepe rem vitae aut natus in pariatur odio ratione quae reprehenderit quia voluptate?</p>
-
-                        <button>pics</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                
-                 -->
-
-
-
-
-
-        
         <!-- Feature Start -->
         <div class="container-fluid feature overflow-hidden py-5">
             <div class="container py-5">
@@ -777,14 +766,15 @@
         </div>
         <!-- Feature End -->
 
-
+  
+    
 
         <!-- Testimonial Start -->
         <div class="container-fluid testimonial py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px; ">
                     <!-- <img src="{% static 'Pages/img/Cafemuziris/cafe4.jpg' %}" alt="" style="opacity: 0.2; position: absolute; margin-left: -400px;"> -->
-                    <img src="{% static 'Pages/img/panther.png' %}" alt="" style="opacity: 0.2; position: absolute; width: 100%; margin-left: -50%; margin-top: -65px;">
+                    <img src="{% static 'Pages/img/panther.png' %}" alt="" style="opacity: 0.2; position: absolute; width: 100%; margin-left: -50%; margin-top: -250px;">
 
                     <h4 class="text-primary">PanthermanagementBregade</h4>
                     <h1 class="display-5 mb-4" >What Our Client Say About Us</h1>
@@ -906,7 +896,7 @@
             <div class="container" >
                 <div class="row g-4 align-items-center" >
                     <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>PanthermanagementBregade</a>, All right reserved.</span>
+                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>PanthermanagementBregade</a>, Oct 2024 @ All right reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end text-white">
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
@@ -937,4 +927,5 @@
     <!-- Template Javascript -->
     <script src="{% static 'Pages/js/main.js' %}"></script>
     </body>
+
 </html>
