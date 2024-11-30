@@ -801,3 +801,107 @@
     <script src="{% static 'Pages/js/main.js' %}"></script>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Custom Confirm Box -->
+ <div id="customConfirm1" style="display:none; position:fixed; top:48%; left:50%; right: 30%; transform:translate(-50%, -50%); background:white; padding:6px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.5); z-index:1000; max-width: 100%; width: 100%; text-align: center; max-height: 180vh; overflow-y: scroll;">
+    <button style="margin-left: 80%; font-size: 32px;" onclick="onCancel()"> &times;</button>
+    <!-- Scrollable Content -->
+    <div class="imge" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-bottom: 15px;">
+        <img src="{% static 'Pages/img/Cafemuziris/cafe4.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+        <img src="{% static 'Pages/img/Cafemuziris/cafe7.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+        <img src="{% static 'Pages/img/Cafemuziris/cafe16.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+        <img src="{% static 'Pages/img/Cafemuziris/cafe13.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+        <img src="{% static 'Pages/img/Cafemuziris/cafe15.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+        <img src="{% static 'Pages/img/Cafemuziris/cafe8.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+    </div>
+
+    <!-- Buttons -->
+
+</div>
+
+<!-- Overlay -->
+<div id="overlay" style="display:none; position:fixed; top:0; left:0; width:200%; height:200%; background:rgb(149, 147, 147); z-index:999; overflow-y: scroll;"></div>
+
+<p id="demo">.</p>
+
+
+<script>
+    function showCustomConfirm1() {
+    document.getElementById('customConfirm1').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Disable background scroll
+    }
+
+    function onCancel() {
+    document.getElementById('demo').innerHTML = ".";
+    closeCustomConfirm1();
+    }
+
+    function closeCustomConfirm1() {
+    document.getElementById('customConfirm1').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+    document.body.style.overflow = 'auto'; // Re-enable background scroll
+    }
+</script>
+<style>
+    #customConfirm1 {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    
+    }
+    /* .imgg img:hover{
+        width: 400px;
+        height: 400px;
+
+    } */
+    #customConfirm1 button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(76, 69, 69);
+    border-radius: 4px;
+    cursor: pointer;
+
+    }
+
+    #customConfirm1 button:hover {
+    background-color: #616161;
+    }
+
+    #customConfirm1 img {
+    border-radius: 8px;
+    }
+
+    #overlay {
+    animation: fadeIn 0.3s ease;
+    background-color: grey;
+    }
+
+    @keyframes fadeIn {
+    from {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 8;
+    }
+    }
+</style>
