@@ -820,7 +820,7 @@
 
 
  <!-- Custom Confirm Box -->
- <div id="customConfirm1" style="display:none; position:fixed; top:48%; left:50%; right: 30%; transform:translate(-50%, -50%); background:white; padding:6px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.5); z-index:1000; max-width: 100%; width: 100%; text-align: center; max-height: 180vh; overflow-y: scroll;">
+ <div id="serviceConfirm" style="display:none; position:fixed; top:48%; left:50%; right: 30%; transform:translate(-50%, -50%); background:white; padding:6px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.5); z-index:1000; max-width: 100%; width: 100%; text-align: center; max-height: 180vh; overflow-y: scroll;">
     <button style="margin-left: 80%; font-size: 32px;" onclick="onCancel()"> &times;</button>
     <!-- Scrollable Content -->
     <div class="imge" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-bottom: 15px;">
@@ -843,8 +843,8 @@
 
 
 <script>
-    function showCustomConfirm1() {
-    document.getElementById('customConfirm1').style.display = 'block';
+    function serviceConfirm() {
+    document.getElementById('serviceConfirm').style.display = 'block';
     document.getElementById('overlay').style.display = 'block';
     document.body.style.overflow = 'hidden'; // Disable background scroll
     }
@@ -855,13 +855,13 @@
     }
 
     function closeCustomConfirm1() {
-    document.getElementById('customConfirm1').style.display = 'none';
+    document.getElementById('serviceConfirm').style.display = 'none';
     document.getElementById('overlay').style.display = 'none';
     document.body.style.overflow = 'auto'; // Re-enable background scroll
     }
 </script>
 <style>
-    #customConfirm1 {
+    #serviceConfirm {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -872,7 +872,7 @@
         height: 400px;
 
     } */
-    #customConfirm1 button {
+    #seriveConfirm button {
     margin: 10px;
     padding: 10px 20px;
     border: none;
@@ -883,11 +883,11 @@
 
     }
 
-    #customConfirm1 button:hover {
+    #serviceConfirm button:hover {
     background-color: #616161;
     }
 
-    #customConfirm1 img {
+    #serviceConfirm img {
     border-radius: 8px;
     }
 
