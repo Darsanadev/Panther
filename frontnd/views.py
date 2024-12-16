@@ -33,12 +33,3 @@ def contact(request):
             return HttpResponse("All fields are required")
     
     return render(request, 'contact.html')  # Return contact form if not POST
-
-def team(request):
-    return render(request, 'Team.html')
-
-def gallary(request):
-    return render(request, 'gallary.html')
-
-def res(request):
-    return render(request, 'res.html')
