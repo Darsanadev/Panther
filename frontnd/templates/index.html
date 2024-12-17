@@ -59,9 +59,7 @@
                         <div class="nav-item dropdown">
                             <!-- <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a> -->
                             <div class="dropdown-menu m-0">
-                                <!-- <a href="{% url 'frontnd:team' %}" class="dropdown-item">Services</a>
-                                <a href="feature.html" class="dropdown-item">Features</a>
-                                <a href="pricing.html" class="dropdown-item">Gallary</a> -->
+                                
                                 <!-- <a href="blog.html" class="dropdown-item">Blog</a>
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                                 <a href="404.html" class="dropdown-item">404 Page</a> -->
@@ -546,7 +544,8 @@
             <!-- Habba dates -->
 
 
-        <img src="{% static 'Pages/img/Habba/hbg.png' %}" alt="" style="opacity: 0.1;  position: absolute; width: 100%; height: auto; margin-top: 120px;">
+        <img src="{% static 'Pages/img/Habba/hbg.png' %}" alt="" style="opacity: 0.1;  position: absolute; width: 100%;  pointer-events: none; height: auto; margin-top: 120px;">
+         
 
 
         <div class="container-fluid feature overflow-hidden py-5" style="background-color: rgb(225, 227, 235); margin-top: -80px;" >
@@ -585,6 +584,9 @@
                             
                         </p>
                         <br><br>
+
+                    
+
                         <button class="picbtn" onclick="habbaserviceConfirm()">Services</button>
                         <button class="picbtn"  onclick="showConfirm()">Gallary</button>
                         <span><a href="{% url 'frontnd:contact' %}"><button class="picbtn">Contact Us</button></a></span>
@@ -593,18 +595,21 @@
                         <style>
                             
                             .picbtn{
-                                width: 200px;
+                                width: 27%;
                                 background: transparent;
                                 padding: 2px;
+                                margin: 5px;
                                 border-color: rgb(212, 208, 208);
                                 font-size: 20px;
                                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                                 border-radius: 29px;
+                                z-index: 1000;
+                                position: relative;
 
                             }
                             .picbtn:hover{
                                 color: black;
-                                background-color: rgb(192, 187, 187);
+                                background-color: rgb(171, 185, 188);
                                 border: none;
 
                             }
@@ -772,7 +777,7 @@
                     
                     </div>
                     <div class="col-lg-6 " style=" border-radius: 6px;">
-                        <img src="{% static 'Pages/img/Villamatti/villa5.jpg' %}" alt="" style="width: 100%;">
+                        <img src="{% static 'Pages/img/Habba/hab2.jpg' %}" alt="" style="width: 100%;">
                     </div>
                     </div>
                    
@@ -1514,7 +1519,9 @@
     <div class="container-fluid feature overflow-hidden py-5" style=" background-color: rgb(225, 238, 242); ">
         <div class="container py-5" >
             <div class="row g-5 pt-5">
-                    <h3 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Our strong Team</h3>
+                    <h3 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; color: #033552;">The Minds Behind Our Success<span>
+                    <h5 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; color: #053957; margin-top: 17px;">Our team thrives on the power of collaboration, blending<br> diverse skills and ideas to create impactful results that resonate with our goals.</h5>
+                </span></h3>
                     <div class="imgee">
                         <div class="."> 
                             <img src="{% static 'Pages/img/ramesh2.jpg' %}" alt="">
