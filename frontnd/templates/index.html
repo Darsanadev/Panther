@@ -45,7 +45,7 @@
         <!-- Navbar & Hero Start -->
         <div class="container-fluid header position-relative overflow-hidden p-0">
             <nav class="navbar navbar-expand-lg fixed-top navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="index.html" class="navbar-brand p-0">
+                <a href="" class="navbar-brand p-0">
                     <h1 style="color: #065e8d; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><img src="{% static 'Pages/img/pnthr.png'%}" alt="">PanthermanagementBregade</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -292,8 +292,10 @@
                        
                         <button style="margin-left: 80%; font-size: 32px;" onclick="closeConfirm3()"> &times;</button>
                         <!-- Scrollable Content -->
-                       
+                        <h3 style="margin-top: -50px; margin-bottom: 50px; color: #e1edf3;">  Cafe muziris Gallary</h3>
+
                         <div class="imge" style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; margin-bottom: 15px;">
+
                             <img src="{% static 'Pages/img/Cafemuziris/cafe4.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
                             <img src="{% static 'Pages/img/Cafemuziris/cafe7.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
                             <img src="{% static 'Pages/img/Cafemuziris/cafe16.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
@@ -727,9 +729,6 @@
 
 
 
-
-
-
             <!--Habba Service Confirm Box -->
 
 
@@ -753,7 +752,7 @@
                 text-align: center;">
                 <button style="margin-left: 80%; font-size: 32px;" onclick="closehabbaserviceConfirm()"> &times;</button>
                 <!-- Scrollable Content -->
-                <h3 style="margin-top: -50px; margin-bottom: 50px; color: #ffffff;">   Our Services</h3>
+                <h3 style="margin-top: -50px; margin-bottom: 50px; color: #b0c8d0;">   Our Services</h3>
 
                 <div class="container py-5">
                     <div class="row g-5 pt-5 " style="margin-top: -70px;" >
@@ -780,21 +779,17 @@
                         <img src="{% static 'Pages/img/Habba/hab2.jpg' %}" alt="" style="width: 100%;">
                     </div>
                     </div>
-                   
+                    
                     <h3 style="font-family: cursive; margin: 90px;">Our Team </h3>
                     <img src="{% static 'Pages/img/Villamatti/villateam.jpg' %}" alt="" style="width: 70%; height: 40%; border: solid 5px rgb(101, 173, 198) ;">
 
-                
                 </div>
-                    
             </div>
-
 
             <!-- Overlay -->
             <div id="overlay" style="display:none; position:fixed; top:0; left:0; width:200%; height:200%; background:rgb(149, 147, 147); z-index:999; overflow-y: scroll;"></div>
 
             <p id="demo">.</p>
-
 
             <script>
                 function habbaserviceConfirm() { 
@@ -802,6 +797,7 @@
                 document.getElementById('overlay').style.display = 'block';
                 document.body.style.overflow = 'hidden'; // Disable background scroll
                 }
+
                 function closehabbaserviceConfirm() {
                     document.getElementById('Confirm').style.display = 'none';
                     document.getElementById('overlay').style.display = 'none';
@@ -818,6 +814,7 @@
                 document.getElementById('overlay').style.display = 'none';
                 document.body.style.overflow = 'auto'; // Re-enable background scroll
                 }
+
             </script>
             
 

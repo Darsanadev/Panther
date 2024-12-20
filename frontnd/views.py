@@ -22,14 +22,16 @@ def contact(request):
                     subject=f'Hey PantherBrigadez i am {name}',
                     message=f'Name: {name} \nPhone: {phone} \nEmail: {mail} \nMessage: {message}.',
                     from_email=mail,  # Use a valid Gmail account
-                    recipient_list=['darshuuu11@gmail.com'],  # The admin email
+                    recipient_list=['pantherbrigades@gmail.com'],  # The admin email
                     fail_silently=False,
                 )
                 return render(request, 'contact.html')  # Redirect to success page
             except Exception as e:
                 # Return an error message if email fails to send
                 return HttpResponse(f"Error sending email: {str(e)}")
-        else:
-            return HttpResponse("All fields are required")
+        # else:
+            
+        #     return HttpResponse("All fields are required")
     
     return render(request, 'contact.html')  # Return contact form if not POST
+
