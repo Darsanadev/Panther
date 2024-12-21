@@ -1,5 +1,4 @@
 from pathlib import Path
-import django_heroku
 import dj_database_url
 import os
 from decouple import config
@@ -13,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-t%1it9m_1udw+7(lnn)515nx$lwy#@+yy_#3i0i@hx408v#$bc'
+# SECRET_KEY = 'django-insecure-t%1it9m_1udw+7(lnn)515nx$lwy#@+yy_#3i0i@hx408v#$bc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -144,4 +143,3 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-django_heroku.settings(locals())
