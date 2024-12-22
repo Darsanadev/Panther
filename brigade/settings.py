@@ -71,15 +71,11 @@ WSGI_APPLICATION = 'brigade.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-        'NAME': '',
-        'USER': 'postgres',
-        'PASSWORD': 'postgresql',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',  # Use SQLite as the backend
+        'NAME': ':memory:',  # Use an in-memory database
     }
 }
+
 
 
 # Password validation
