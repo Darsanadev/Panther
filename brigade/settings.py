@@ -1,5 +1,5 @@
 from pathlib import Path
-import dj_database_url
+#import dj_database_url
 import os
 from decouple import config
 
@@ -21,7 +21,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = ['13.60.209.134', 'panthermanagementbrigade.in', 'www.panthermanagementbrigade.in']
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [

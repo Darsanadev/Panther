@@ -5,7 +5,7 @@ app_name = 'frontnd'
 
 urlpatterns = [
     path('about/', views.about, name='about'),
-    path('index/', views.home, name='index'),
+    path('', views.home, name='index'),
     path('contact/', views.contact, name='contact'),
     
     ]
