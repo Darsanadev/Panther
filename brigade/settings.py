@@ -21,7 +21,9 @@ DEBUG = True
 
 # ALLOWED_HOSTS = ['13.60.209.134', 'panthermanagementbrigade.in', 'www.panthermanagementbrigade.in']
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['13.60.209.134', 'localhost', '127.0.0.1']
+
+# ALLOWED_HOSTS = ['13.60.209.134:8000']
 # Application definition
 
 INSTALLED_APPS = [
