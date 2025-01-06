@@ -48,14 +48,15 @@
          <div class="container-fluid p-0">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 px-lg-5 py-3 py-lg-0">
                 <a href="{% url 'frontnd:index' %}" class="navbar-brand p-0">
-                    <!-- <h1 class="display-6 text-primary m-0"> <link href="{% static 'Pages/img/panther.png' %}">PanthermanagementBrigade</h1> -->
-                    <h1 style="color: #065e8d; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><img src="{% static 'Pages/img/pnthr.png'%}" alt="">PanthermanagementBregade</h1>
-
+                    <h1 class="display-6 text-primary m-0"> <link href="{% static 'Pages/img/panther.png' %}"></h1>
+                   
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
+                    
                 </button>
+              
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0"  style="margin-right: 95px;">
                         <a href="{% url 'frontnd:index' %}" class="nav-item nav-link">Home</a>
@@ -125,6 +126,7 @@
         
 
         
+        </style>
         <!-- <img src="{% static 'Pages/img/villabackgrnd.avif'%}" alt="" style="width: 100%;  margin-top: -97px; margin-bottom: -20px;"> -->
         <div class="container-fluid blog overflow-hidden py-5" >
             <div class="container py-5">
@@ -137,11 +139,11 @@
                 <div class="row g-5 pt-5">
                     <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s"  >
                         <h3 class="display-4 text-dark mb-4 wow fadeInUp" data-wow-delay="0.3s" style="color: black;" >Who we are?</h3>
-                        <p class="mb-6 wow fadeInUp" data-wow-delay="0.5s" style="color: #000000; font-size: 21px; line-height: 38px;"><span style="color: #0d4867; font-size: 22px;">PanthermanagementBregade</span> is a privately owned innovative hospitality management company where we introduce, manage, and develop homestays, villas, and cafés on your behalf with our team of professionals. We deliver two major business lines with an innovative concept where we introduce your hospitality business in a unique manner to the world. We have managed 2+ cafés and 2+ resorts portfolios across Karnataka till now and also provide investor opportunities, development, management services, and hospitality growth opportunities to our partners and associates. 
+                        <p class="mb-6 wow fadeInUp" data-wow-delay="0.5s" style="color: #000000; font-size: 21px; line-height: 38px;"><span style="color: #0d4867; font-size: 22px;">PantherBregade</span> is a privately owned innovative hospitality management company where we introduce, manage, and develop homestays, villas, and cofee shop on your behalf with our team of professionals. We deliver two major business lines with an innovative concept where we introduce your brand to hospitality business in a unique manner to the world. We have managing 2+ luxury private villas portfolios across Karnataka and Kerala till now and also provide investor opportunities, development, management services, and hospitality growth opportunities to our partners and associates. 
                         </p> 
                     </div>
-                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
-                        <img src="{% static 'Pages/img/cafe3.jpg' %}" class="img-fluid w-100 h-100" alt="">
+                    <div class="col-lg-6 wow fadeInRight RotateMoveLeft" data-wow-delay="0.2s">
+                        <img src="{% static 'Pages/img/cafe3.jpg' %}" class="img-fluid w-100 h-100" alt="" style="border-radius: 0px;">
                     </div>
                 </div><br><br>
             </div>
@@ -294,8 +296,8 @@
                             <a href="{% url 'frontnd:index' %}"> About Us</a>
                             <a href="{% url 'frontnd:contact' %}"> Contact Us</a>
                             <a href=""> Our Features</a>
-                            <a href=""> All Services</a>
-                            <a href=""> Our Team</a>
+                            <a href="">  Services</a>
+                            
                         </div>
                     </div>
                    
