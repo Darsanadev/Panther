@@ -15,7 +15,7 @@ def contact(request):
         mail = request.POST.get('mail')
         phone = request.POST.get('phone')
         message = request.POST.get('message')
-
+            
         if name and mail and phone and message:  # Ensure that all fields are filled
             try:
                 send_mail(
