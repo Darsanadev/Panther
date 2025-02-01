@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     {% load static %}
-
+    <div style="overflow-x: hidden;">
     <head>
         <meta charset="utf-8">
         <title>PanthermanagementBregade</title>
@@ -39,7 +39,7 @@
         <link href="{% static 'Pages/css/style.css' %}" rel="stylesheet">
     </head>
     
-    <body style="background-color: black; overflow-x: hidden; ">
+    <body style="background-color: black; overflow-x: hidden;">
 
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -90,9 +90,9 @@
         
         
         
-        <div class="row g-5  align-items-center" style="margin-bottom: 100px; margin-left: 10%; overflow-x: hidden;">
-            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                <form action="" method="post" enctype="multipart/form-data">
+        <div class="row g-5  align-items-center" style="margin-bottom: 100px; margin-left: 10%; ">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s" >
+                <form action="" method="post" enctype="multipart/form-data" style="overflow-x: hidden;">
                     {% csrf_token %}
                     <div class="row g-3">
                         <div class="col-12">
@@ -146,14 +146,14 @@
                         alert("Send Successfully! Get in touch!! :)");
 
                     } else {
-
+                        
                         alert("Please fill in all required fields.");
                     }
                 }
             </script> -->
             
             
-        <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s" style="margin-bottom: 50px; margin-left: 0px;">
+        <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s" style="margin-bottom: 50px; margin-left: 0px; overflow-x: hidden;">
             <div class="d-flex align-items-center mb-4">
                
             </div>
