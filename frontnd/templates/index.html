@@ -206,6 +206,8 @@
         
         </div>
 
+
+
             <!-- Cfe muzris -->
 
 
@@ -1359,11 +1361,347 @@
                        
                    </style>
 
+
+
+
+        
+            <!-- Sharadha Greens  -->
+
+
+
+
+            <div class="container-fluid feature overflow-hidden py-5 " style="background-color: rgb(167, 163, 211); margin-top: -80px; margin-bottom: 0px;">
+                <div class="container py-5">
+                    <div class="row g-5 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                       
+                        <div class="col-lg-6">
+                            <!-- <img src="{% static 'Pages/img/Cafemuziris/cafe4.jpg' %}" alt="" style="opacity: 0.15; width: 45%; margin-top: -140px; border-radius: 2; position: absolute;"> -->
+                            <h1 style="color: rgb(60, 57, 57); font-family: 'Times New Roman', Times, serif;">Sharadha Greens</h1><br>
+                            <!-- <h3 style="color: rgb(247, 243, 243); font-family: 'Times New Roman', Times, serif;"> Design & Develop Coffee Shop Setup</h3><br> -->
+                            <p style="color: rgb(55, 52, 52); font-size: 19px; margin-top: 13px; line-height: 42px;">A beautiful villa nestled in the centre of coconut and Areca nut farm. 
+                                A bliss mixture of modern-farm architecture with an outdoor pool. 
+                                The best getaway located 25kms from Bengaluru.
+                                
+                                Villa with built up area of 7000sqft ( Ground floor + First floor) 
+                                
+                                Garden area and swimming pool area measuring 3500 sqft. 
+                                
+                                Perfect for an event and party for upto 100members.</p>
+                            <br><br>
+                            <button class="greenbtn" onclick="showservicegreen()">Services</button>
+                            <button class="greenbtn" onclick="showCustomConfirm4()">Gallary</button>
+                            <span><a href="{% url 'frontnd:contact' %}"><button class="greenbtn">Contact Us</button></a></span>
+    
+                        <style>
+                            .greenbtn{
+                                    width: 200px;
+                                    background-color: transparent;
+                                    padding: 2px;
+                                    color: rgb(11, 50, 74);
+                                    font-size: 25px;
+                                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                    border-top-right-radius: 85px;
+                                    border-bottom-right-radius: 75px; 
+    
+                                }
+                                .greenbtn:hover{
+                                    color: rgb(255, 255, 255);
+                                    background-color: rgb(137, 132, 197);;
+                                    border: none;
+                                }
+                            
+                                .pic{
+                                    position: relative;
+                                    height: 230px;
+                                    border-radius: 10px;
+                                    box-shadow: 2px 3px 4px lightgray;
+                                }
+                                .pic img{
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 10px;
+                                }
+    
+                        </style>
+    
+                        </div>
+
+                        <div class="col-lg-6" >
+                            
+                            <img id="coo" src="{% static 'Pages/img/Greens/g9.jpg' %}" alt="" style="width: 100%; border-radius: 1%; box-shadow: 0px 0px 25px rgb(85, 72, 110);">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+                        <!-- Sharadha Greens Modal Confirm Box -->
+    
+                        <div id="customConfirm4" style=" 
+                                display:none; 
+                                position:fixed; 
+                                top:50%; 
+                                left:50%; 
+                                transform:translate(-50%, -50%); 
+                                overflow-x: hidden; 
+                                background:rgb(117, 142, 152); 
+                                padding:6px; 
+                                border-radius:5px; 
+                                box-shadow:0 0 10px rgba(0,0,0,0.5); 
+                                z-index:1000; 
+                                max-width: 100%; width: 100%; 
+                                text-align: center; 
+                                max-height: 100vh; 
+                                overflow-y: auto;"> 
+                                                  
+                            <button style="margin-left: 80%; font-size: 32px;" onclick="closeConfirm4()"> &times;</button>
+                            <!-- Scrollable Content -->
+                            <h3 style="margin-top: -50px; margin-bottom: 50px; color: #e1edf3;"> Sharadha Greens Gallary</h3>
+    
+                            <div class="imge" style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; margin-bottom: 15px;">
+                            
+                                <img src="{% static 'Pages/img/Greens/g1.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+                                <img src="{% static 'Pages/img/Greens/g2.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+                                <img src="{% static 'Pages/img/Greens/g9.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+                                <img src="{% static 'Pages/img/Greens/g4.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+                                <img src="{% static 'Pages/img/Greens/g10.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+                                <img src="{% static 'Pages/img/Greens/g5.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+                                <img src="{% static 'Pages/img/Greens/g6.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+                                <img src="{% static 'Pages/img/Greens/g7.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+                                <img src="{% static 'Pages/img/Greens/g8.jpg' %}" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+
+                            </div>
+                            
+                            <!-- Buttons -->
+                            
+                        </div>
+    
+                        <!-- Overlay -->
+                        <div id="overlay" style="display:none; position:fixed; top:0; left:0; width:200%; height:200%; background:rgb(149, 147, 147); z-index:999; overflow-y: scroll;"></div>
+    
+                        <p id="demo">.</p>
+    
+    
+                        <script>
+                            function showCustomConfirm4() {
+                            document.getElementById('customConfirm4').style.display = 'block';
+                            document.getElementById('overlay').style.display = 'block';
+                            document.body.style.overflow = 'hidden'; // Disable background scroll
+                            }
+    
+                            function closeConfirm4() {
+                            document.getElementById('customConfirm4').style.display = 'none';
+                            document.getElementById('overlay').style.display = 'none';
+                            document.body.style.overflow = 'auto'; // Re-enable background scroll
+                            }
+                    
+                            function onCancel() {
+                            document.getElementById('demo').innerHTML = ".";
+                            closeCustomConfirm4();
+                            }
+                        
+                            function closeCustomConfirm4() {
+                            document.getElementById('customConfirm4').style.display = 'none';
+                            document.getElementById('overlay').style.display = 'none';
+                            document.body.style.overflow = 'auto'; // Re-enable background scroll
+                            }
+                        </script>
+                        
+    
+                        
+                        <style>
+                            
+                            #customConfirm4 {
+                            font-family: Arial, sans-serif;
+                            font-size: 16px;
+                            line-height: 1.5;
+                            
+                            }
+                            /* Trigger Button  */
+    
+                            .imge img:hover{
+                            opacity: 0.6;
+                            width: 400px;
+                            height: 400px;
+                            border-radius: 2px;
+                            }
+    
+                            #customConfirm4 button {
+                            margin: 10px;
+                            padding: 10px 20px;
+                            border: none;
+                            background-color: #ffffff;
+                            color: rgb(76, 69, 69);
+                            border-radius: 4px;
+                            cursor: pointer;
+    
+                            }
+                          
+                            #customConfirm4 img {
+                            border-radius: 8px;
+                            }
+                        
+                            #overlay {
+                            animation: fadeIn 0.3s ease;
+                            background-color: rgb(65, 120, 159);
+                            }
+                        
+                            @keyframes fadeIn {
+                            from {
+                                opacity: 0.8;
+                            }
+                            to {
+                                opacity: 8;
+                            }
+                            }
+                        </style>
+    
+    
+    
+                <!-- Sharadha Greens Service Confirm Box -->
+    
+
+
+                <div id="greenserviceConfirm" style="
+                    display: none; 
+                    position: fixed; 
+                    top: 50%; 
+                    left: 50%; 
+                    transform: translate(-50%, -50%); 
+                    background: rgb(182, 217, 233);
+                    overflow-x: hidden;
+                    padding: 6px; 
+                    border-radius: 5px; 
+                    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+                    z-index: 1000; 
+                    width: 100%; 
+                    max-height: 100vh; 
+                    overflow-y: auto; 
+                    text-align: center;">
+                    <button style="margin-left: 80%; font-size: 32px;" onclick="closegreenserviceConfirm()"> &times;</button> 
+                    <!-- Scrollable Content -->
+                    <h3 style="margin-top: -50px; margin-bottom: 50px; color: #ffffff;">   Our Services</h3>
+    
+                    <div class="container py-5">
+                        <div class="row g-5 pt-5 " >
+    
+                        <div class="col-lg-6 " style=" border-radius: 6px;">
+                        
+                        <p class="spice" style="text-align: left; line-height: 2;">
+                            <span style="color: rgb(226, 126, 4);" > # </span> Initial Property set-up - The initial establishment of the property involves acquiring necessary items and equipment and organizing the layout for the interiors business.<br>
+                            <span style="color: rgb(226, 126, 4);" > # </span> Enhance Business & Profits - To boost business operations and profitability, we implement vendor management services. <br>
+                            <span style="color: rgb(226, 126, 4);" > # </span>  Recruitment Process - Our HR team is responsible for recruiting and training staff members to ensure they are well-prepared for their roles.</br>
+                            <span style="color: rgb(226, 126, 4);" > # </span>  As Per Govt. Regulations - Compliance with government regulations necessitates the completion of licenses and other relevant documentation as required by authorities. <br>
+                            <span style="color: rgb(226, 126, 4);" > # </span>We handle business registration and establish online partnerships for promotional activities. </br>
+                            <span style="color: rgb(226, 126, 4);" > # </span>Monthly reports detailing profits and expenses are shared with the Directors for review.</br></p>
+                        
+                        </div>
+                        <div class="col-lg-6 " style=" border-radius: 3px;">
+                            <img src="{% static 'Pages/img/Greens/g10.jpg' %}" alt="" style="width: 100%; ">
+                        </div>
+                        </div>
+                    
+                        <h3 style="font-family: cursive; margin: 90px;">Our Team </h3>
+                        <img src="{% static 'Pages/img/Cafemuziris/cafeteam.jpg' %}" alt="" style="width: 70%; height: 40%; border: solid 5px rgb(101, 173, 198) ;">
+
+                    </div>
+                        
+                </div> 
+    
+    
+                <!-- Overlay -->
+                <div id="overlay" style="display:none; position:fixed; top:0; left:0; width:200%; height:200%; background:rgb(149, 147, 147); z-index:999; overflow-y: scroll;"></div>
+    
+                <p id="demo">.</p>
+    
+    
+                <script>
+                    function showservicegreen() {
+                    document.getElementById('greenserviceConfirm').style.display = 'block';
+                    document.getElementById('overlay').style.display = 'block';
+                    document.body.style.overflow = 'hidden'; // Disable background scroll
+                    }
+
+                    function closegreenserviceConfirm() {
+                        document.getElementById('Confirm').style.display = 'none';
+                        document.getElementById('overlay').style.display = 'none';
+                        document.body.style.overflow = 'auto'; // Re-enable background scroll
+                    }
+                
+                    function onCancel() {
+                    document.getElementById('demo').innerHTML = ".";
+                    closegreenserviceConfirm();
+                    }
+                
+                    function closegreenserviceConfirm() {
+                    document.getElementById('greenserviceConfirm').style.display = 'none';
+                    document.getElementById('overlay').style.display = 'none';
+                    document.body.style.overflow = 'auto'; // Re-enable background scroll
+                    }
+                </script>
+                
+    
+                
+                <style>
+                    
+                    #greenserviceConfirm {
+                    font-family: Arial, sans-serif;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    
+                    }
+                    /* Trigger Button  */
+    
+                    .imge img:hover{
+                    opacity: 0.6;
+                    width: 400px;
+                    height: 400px;
+                    border-radius: 2px;
+                    }
+    
+                    #greenserviceConfirm button {
+                    margin: 10px;
+                    padding: 10px 20px;
+                    border: none;
+                    background-color: #ffffff;
+                    color: rgb(76, 69, 69);
+                    border-radius: 4px;
+                    cursor: pointer;
+    
+                    }
+                   /*                     
+                    #customConfirm3 button:hover {
+                    background-color: #616161;
+                    } */
+                
+                    #greenserviceConfirm img {
+                    border-radius: 8px;
+                    }
+                
+                    #overlay {
+                    animation: fadeIn 0.3s ease;
+                    background-color: grey;
+                    }
+                
+                    @keyframes fadeIn {
+                    from {
+                        opacity: 0.8;
+                    }
+                    to {
+                        opacity: 8;
+                    }
+                    }
+                </style>
+    
+    
+        
       
 
 
 
         <!-- Services Start -->
+
+
         <section id="service-session">
         <div class="container-fluid feature overflow-hidden py-5" style="background-color: #b4d0d7; margin-top: -100px;">
             <div class="container py-5">
